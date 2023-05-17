@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HiMenu, HiTranslate, HiOutlineChatAlt2 } from "react-icons/hi";
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -92,6 +93,33 @@ export default function Header(props) {
     <div className="bg-gray-300">
       <div className = "max-w-7xl mx-auto bg-gray-300 min-h-screen px-2 py-2">
         {props.children}
+=======
+import HeaderPage from "../../../images/HeaderPage.png";
+import "./Header.css";
+import { HiTranslate } from "react-icons/hi";
+
+function Header() {
+  return (
+    <div>
+      <div className="header_top">
+        <a className="header_lookup" href="">
+          LookUp.com
+        </a>
+        <div>
+          {" "}
+          <HiTranslate />
+          <a className="header_help" href="">
+            Trợ giúp
+          </a>
+        </div>
+>>>>>>> 4349c8e87466274eaa3839b3f1ef67c088df991a
+      </div>
+      <div className="header_body">
+        <img className="header_img" src={HeaderPage} alt="" />
+        <h3 className="header_title">
+          Khám phá và kết nối với các doanh nghiệp <br /> địa phương trong khu
+          vực của bạn
+        </h3>
       </div>
     </div>
     </>
