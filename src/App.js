@@ -6,6 +6,7 @@ import Footer from "./components/Layout/Footer/Footer";
 import Home from "./components/Home/Home";
 import LoginForm from "./components/User/LoginForm";
 import { Fragment } from "react";
+import NewFeed from "./components/Home/NewFeed";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Fragment>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<NewFeed />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
