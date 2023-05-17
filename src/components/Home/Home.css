@@ -1,12 +1,20 @@
 .body_top {
     display: flex;
     padding-top: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: #F3F3F3;
+    height: auto;
 }
 
 .body_left {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+}
+
+.search_partner {
+    display: flex;
+    justify-content: end;
 }
 
 .body_top_search {
@@ -14,6 +22,19 @@
     height: 44px;
     border: none;
     border-radius: 50px;
+    position: relative;
+}
+
+.search_icon {
+    border: none;
+    border-radius: 20px;
+    width: 111px;
+    height: 44px;
+    background-color: #2187FF;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .body_top_item1 {
@@ -85,6 +106,7 @@
 .body_top_item3 {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 
 }
 
@@ -139,6 +161,15 @@
     border-radius: 100px;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.img_company2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .body_top_item4 {
@@ -200,4 +231,44 @@ p {
 .img_post {
     width: 550px;
     height: 261px;
+}
+
+.total_like_cmt {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #B1B1B1;
+}
+
+.total_like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.act_post {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.item_act {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.item_like_cmt_send {
+    width: 20px;
+    height: 20px;
+}
+
+.item_act_post {
+    padding: 3px;
 }

@@ -1,0 +1,72 @@
+.newfeed {
+    display: flex;
+    justify-content: center;
+    background-color: #F3F3F3;
+}
+
+.newfeed_left {
+    position: relative;
+    width: 265px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.newfeed_left_bg_img {
+    position: absolute;
+    width: 265px;
+    height: 68px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.newfeed_left_avt_img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.newfeed_right {
+    width: 265px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.newfeed_company {
+    display: flex;
+    align-items: center;
+}
+
+.newfeed_detail_company {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newfeed_act_company {
+    display: flex;
+
+
+}
+
+.newfeed_icon_action1 {
+    display: flex;
+    width: 74px;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.newfeed_icon_action {
+
+    width: 74px;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}

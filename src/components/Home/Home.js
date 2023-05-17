@@ -1,5 +1,8 @@
-import { AiFillCheckCircle } from "react-icons/ai";
-import {  Container } from "react-bootstrap";
+import { AiFillCheckCircle, AiFillLike, AiOutlineLike  } from "react-icons/ai";
+import { FaRegComment } from "react-icons/fa";
+import { TbSend } from "react-icons/tb";
+import { BsSearch } from "react-icons/bs";
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 import "./Home.css";
 function Home() {
@@ -36,9 +39,21 @@ function Home() {
             <div className="envent_detail_more">
               <a href=""> Tìm hiểu thêm</a>
             </div>
-            <h6 className="title_event">
-              Sự kiện đang diễn ra <br /> có thể bạn quan tâm
-            </h6>
+
+            <div className="event_detail">
+              <img
+                className="img_event"
+                src="https://cdn.mos.cms.futurecdn.net/V6LCHNxfSPT2Sxpr4bAzD.jpg"
+                alt=""
+              />
+            </div>
+            <div className="date_time_event">
+              <p className="title_event">Đồ ăn thức uống</p>
+              <p className="title_event">Ngày 10 tháng 7 năm 2023</p>
+            </div>
+            <div className="envent_detail_more">
+              <a href=""> Tìm hiểu thêm</a>
+            </div>
             <div className="event_detail">
               <img
                 className="img_event"
@@ -56,11 +71,18 @@ function Home() {
           </div>
         </div>
         <div className="body_center">
-          <input
-            className="body_top_search"
-            type="text"
-            placeholder="Bạn đang cần tìm đối tác?"
-          />
+          <div className="search_partner">
+            <input
+              className="body_top_search"
+              type="text"
+              placeholder="Bạn đang cần tìm đối tác?"
+            />
+            <button className="search_icon">
+              <BsSearch />
+              <p>Tìm kiếm</p>
+            </button>
+          </div>
+
           <div className="body_top_item2">
             <h3>
               Bạn đang cần tìm đối tác, khách hàng? Đăng ký miễn phí ngay tại
@@ -81,8 +103,7 @@ function Home() {
                 alt=""
               />
               <div className="post_title">
-                <p>Thuc Bui</p>
-                <p>Đồ ăn thức uống</p>
+                <h3>Thuc Bui</h3>
                 <p>Được tài trợ</p>{" "}
               </div>
             </div>
@@ -93,6 +114,29 @@ function Home() {
               src="https://i.pinimg.com/originals/39/88/85/398885df3f6e523828d80cf867a77039.jpg"
               alt=""
             />
+            <div>
+              <div className="total_like_cmt">
+                <div className="total_like">
+                  <AiFillLike />
+                  <p>1.2k</p>
+                </div>
+                <p>50 Bình luận</p>
+              </div>
+              <div className="act_post">
+                <div className="item_act">
+                  <AiOutlineLike className="item_like_cmt_send" />
+                  <h5 className="item_act_post">yêu Thích</h5>
+                </div>
+                <div className="item_act">
+                  <FaRegComment className="item_like_cmt_send" />
+                  <h5 className="item_act_post">Bình luận</h5>
+                </div>
+                <div className="item_act">
+                  <TbSend className="item_like_cmt_send" />
+                  <h5 className="item_act_post">Gửi tin nhắn</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="body_top_item3">
@@ -103,13 +147,13 @@ function Home() {
           />
           <div className="body_top_item3_detail_ads">
             <img
-              className="img_company"
+              className="img_company2"
               src="https://i.pinimg.com/originals/39/88/85/398885df3f6e523828d80cf867a77039.jpg"
               alt=""
             />
             <div>
-              <h6>Công ty Thức Bùi</h6>
-              <h8>Coder</h8>
+              <h3>Công ty Thức Bùi</h3>
+              <p>Coder</p>
             </div>
           </div>
           <div className="suport">
