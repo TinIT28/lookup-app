@@ -1,5 +1,5 @@
 import { AiFillCheckCircle } from "react-icons/ai";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 
 import "./Home.css";
 function Home() {
