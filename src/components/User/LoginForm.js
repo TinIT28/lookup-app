@@ -1,12 +1,13 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import bgImg from "../assets/img1.jpg";
 import { useForm } from "react-hook-form";
-import {MDBCheckbox,} from "mdb-react-ui-kit";
+import { MDBCheckbox } from "mdb-react-ui-kit";
+import "./login.scss";
 
 export default function LoginForm() {
   const {
     formState: {},
-  } = useForm()
+  } = useForm();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [passwordError, setpasswordError] = useState("");
@@ -83,11 +84,7 @@ export default function LoginForm() {
             <span>Sign in with Google</span>
           </button>
 
-          <form
-            id="form"
-            className="flex flex-col"
-            onSubmit={loginSubmit}
-          >
+          <form id="form" className="flex flex-col" onSubmit={loginSubmit}>
             <input
               type="email"
               className="form-control"
@@ -98,8 +95,8 @@ export default function LoginForm() {
               onChange={(event) => setEmail(event.target.value)}
             />
             <small id="passworderror" className="text-danger form-text">
-                  {emailError}
-                </small>
+              {emailError}
+            </small>
             <input
               type="password"
               className="form-control"
@@ -108,9 +105,11 @@ export default function LoginForm() {
               onChange={(event) => setPassword(event.target.value)}
             />
             <small id="passworderror" className="text-danger form-text">
-                  {passwordError}
-                </small>
-            <button type="submit" className="btn">Sign In</button>
+              {passwordError}
+            </small>
+            <button type="submit" className="btn">
+              Sign In
+            </button>
 
             <div class="striped">
               <span class="striped-line">-----------------------------</span>

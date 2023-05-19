@@ -18,6 +18,7 @@
 }
 
 .body_top_search {
+    outline: none;
     width: 550px;
     height: 44px;
     border: none;
@@ -207,7 +208,7 @@
 
 .body_top_item5 {
     width: 550px;
-    height: 479px;
+    height: 549px;
     background-color: #fff;
     border-radius: 20px;
     margin-top: 10px;

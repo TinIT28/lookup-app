@@ -1,7 +1,8 @@
-import { AiFillCheckCircle, AiFillLike, AiOutlineLike  } from "react-icons/ai";
+import { AiFillCheckCircle, AiFillLike, AiOutlineLike } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { TbSend } from "react-icons/tb";
 import { BsSearch } from "react-icons/bs";
+
 import { Button, Container, Row, Col } from "react-bootstrap";
 
 import "./Home.css";
