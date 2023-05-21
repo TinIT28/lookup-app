@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import LoginForm from "./components/User/LoginForm";
 import { Fragment } from "react";
 import NewFeed from "./components/Home/NewFeed";
+import Search from "./components/Search/Search";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Fragment>
           <Header />
           <Routes>
-            <Route path="/" element={<NewFeed />} />
+            <Route path="/" element={<Search />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
