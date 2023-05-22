@@ -16,13 +16,24 @@ import Form from './components/Forms/Form';
 function App() {
   return (
     <div className="App">
-      <Form />
+      
       {/* <Navbar />
       <Hero />
       <About />
       <Services />
       <Tours />
       <Footer /> */}
+      <Router>
+        <Fragment>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Search />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </Fragment>
+      </Router>
     </div>
   );
 }
