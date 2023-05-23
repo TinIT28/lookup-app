@@ -10,6 +10,8 @@ import Search from "./components/Search/Search";
 import Hero from './components/Home/Hero';
 import About from './components/Home/About';
 import Tours from './components/Home/Tours';
+import Service from './components/Home/Service';
+import Footer from './components/Layout/Footer/Footer'
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <Header />
           <Hero />
       <About />
-      <Services />
+      <Service />
       <Tours />
           <Routes>
             <Route path="/" element={<NewFeed />} />

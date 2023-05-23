@@ -1,6 +1,6 @@
 import { TfiApple, TfiAndroid } from "react-icons/tfi";
-
 import "./Footer.css";
+
 function Footer() {
   return (
     <div className="Footer">
