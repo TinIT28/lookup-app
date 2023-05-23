@@ -1,8 +1,7 @@
 .Footer {
     width: auto;
-    height: 321px;
+    height: 360px;
     background-color: #112D4E;
-    margin-top: 600px;
     display: flex;
     flex-direction: column;
 
